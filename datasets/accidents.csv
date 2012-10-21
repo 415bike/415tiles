@@ -1,4 +1,4 @@
-FullAddress,Fatal,Injured,LightingCondition,RoadSurface,latitude,longitude
+Fatal,Injured,LightingCondition,RoadSurface,latitude,longitude
 0,1,Daylight,Dry,37.7674538,-122.4288923
 0,1,Daylight,Dry,37.7904395,-122.3999611
 0,1,Daylight,Wet,37.7657823,-122.4075633
