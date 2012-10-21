@@ -1,0 +1,214 @@
+{
+  "bounds": [
+    -122.5181,
+    37.7089,
+    -122.3511,
+    37.8353
+  ],
+  "center": [
+    -122.4309,
+    37.7631,
+    11
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 10,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      },
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -123.10578280753911,
+        37.69103947302197,
+        -122.33139283534575,
+        37.93135048411788
+      ],
+      "id": "shoreline",
+      "class": "",
+      "Datasource": {
+        "file": "datasets/sfshoreext/sfshoreext.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "shoreline"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -122.5094287,
+        37.4896898,
+        -122.0883876,
+        37.9095522
+      ],
+      "id": "accidents",
+      "class": "",
+      "Datasource": {
+        "file": "datasets/accidents.csv",
+        "id": "accidents",
+        "project": "bike",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "accidents",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -122.50765095803402,
+        37.62004707384754,
+        -119.84123295479682,
+        37.88790132554964
+      ],
+      "id": "parks",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/RPD_Parks/RPD_Parks.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "parks"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -122.511652568108,
+        37.706174239481854,
+        -122.35877838608323,
+        37.832364544225854
+      ],
+      "id": "street-lines",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/stclines_streets/stclines_streets.shp",
+        "id": "street-lines",
+        "project": "bike",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "street-lines"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -122.477089,
+        37.714801,
+        -122.390141,
+        37.80394900000001
+      ],
+      "id": "parking",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/SFMTA_Bicycle_Parking_Example__Complete.csv"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "parking"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -122.51165980245973,
+        37.706441586888126,
+        -122.36733814857512,
+        37.83222937331703
+      ],
+      "id": "bike-routes",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/mta_Bicycle_Route_Network/mta_Bicycle_Route_Network.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "bike-routes"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -122.511652568108,
+        37.706174239481854,
+        -122.35877838608323,
+        37.832364544225854
+      ],
+      "id": "street-labels",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/stclines_streets/stclines_streets.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "street-labels"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -122.51295285120064,
+        37.706124361551765,
+        -122.35932321942481,
+        37.8335053145485
+      ],
+      "id": "hoods",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/planning_neighborhoods/planning_neighborhoods.shp",
+        "id": "hoods",
+        "project": "bike",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hoods"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -122.99255053908928,
+        37.01244430731864,
+        -121.08203099962886,
+        38.9041820004994
+      ],
+      "id": "transit",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/Transit_DB_Shapefiles/Transit_Stations.shp",
+        "id": "bart",
+        "project": "bike",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "transit"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "415 Tiles",
+  "description": "",
+  "attribution": ""
+}
