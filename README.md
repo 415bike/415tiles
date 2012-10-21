@@ -4,7 +4,7 @@
 415 Tiles is an open-source map designed for San Francisco bicyclists. It is a [TileMill](http://mapbox.com/tilemill/) 
 project, and is the base map layer used in the [415Bike](http://415bike.com) iOS app.
 
-![Bike Map Screenshot](http://f.cl.ly/items/2N113j221f053b3E2G1n/Screen%20Shot%202012-10-20%20at%206.29.02%20PM.png)
+![415 Tiles Screenshot](http://f.cl.ly/items/1z0z3Y1o0D3u322W0W0n/415tile-screenshot.png)
 
 Data Sources
 ------------
@@ -23,7 +23,7 @@ datasets used to build the 415tile map.
 Improve it
 ----------
 
-Want to play cartographer? Download and install Tilemill, then:
+Want to play cartographer? [Download Tilemill](http://mapbox.com/tilemill/), then:
 
 ```bash
 cd ~/Documents/mapbox/project/
