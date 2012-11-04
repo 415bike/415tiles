@@ -25,6 +25,15 @@ datasets used to build the 415tile map.
 - [General outline of San Francisco, ocean and bay, and other counties.](https://data.sfgov.org/Geography/Bay-Area-General-Zipped-Shapefile-Format-/ye46-7n65)
 - [San Francisco Shoreline](https://data.sfgov.org/Geography/San-Francisco-Shoreline-Zipped-Shapefile-Format-/kj7y-jjpu)
 
+Tenative Additions
+------------------
+
+- [SFPD Incidents](https://data.sfgov.org/Public-Safety/Sfpd-Incident-Last-Month/tmnf-yvry)
+- [SF Civic Art Collection](https://data.sfgov.org/Arts-Culture-and-Recreation-/SF-Civic-Art-Collection/zfw6-95su)
+- [Water Bodies in San Francisco](https://data.sfgov.org/Geography/Water-Bodies-in-San-Francisco-Zipped-Shapefile-For/7wxv-7sn4)
+- [The Presidio of San Francisco](https://data.sfgov.org/Geography/The-Presidio-of-San-Francisco-Zipped-Shapefile-For/5sny-6aph)
+
+
 Improve it
 ----------
 
