@@ -226,17 +226,34 @@ Map {
 }
 
 #tracks {
-  line-opacity:0;  
+  line-opacity: 0;  
   line-smooth: 1;
-  line-width: 3;
-  [AGENCYNAME = 'Bay Area Rapid Transit'] {
-    line-opacity: 1;
+  line-dasharray: 2, 7;
+  line-width: 5;
+  [ASSET_NAME = 'Bart: East Dublin/Pleasanton to Millbrae'] {
+    line-opacity: 0.3;
     line-color: @bartColor;
+    [zoom < 14] { line-width: 3; }
+    [zoom > 14] { line-opacity: 1; }
   }
-  [AGENCYNAME = 'Caltrain'] {
-    line-opacity: 1;
+  [ASSET_NAME = 'Caltrain: Gilroy to Terminus--4th And King'] {
+    line-opacity: 0.2;
     line-color: @caltrainColor;
-  }
-  
+    [zoom < 14] { line-width: 3; }
+    [zoom > 14] { line-opacity: 1; }
+  }  
 }
 
+#tracks-2 {
+  line-opacity: 0;  
+  line-smooth: 1;
+  line-width: 3;
+  [ASSET_NAME = 'Bart: East Dublin/Pleasanton to Millbrae'] {
+    line-opacity: 0.2;
+    line-color: @bartColor;
+  }
+  [ASSET_NAME = 'Caltrain: Gilroy to Terminus--4th And King'] {
+    line-opacity: 0.2;
+    line-color: @caltrainColor;
+  }  
+}

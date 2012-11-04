@@ -125,28 +125,6 @@
     {
       "geometry": "linestring",
       "extent": [
-        -123.05336030029027,
-        36.98370834975372,
-        -121.23958350223668,
-        38.79308843982027
-      ],
-      "id": "tracks",
-      "class": "",
-      "Datasource": {
-        "file": "datasets/Transit_DB_Shapefiles/Transit_Routes.shp",
-        "id": "tracks",
-        "project": "415tiles",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "tracks",
-      "status": "off"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
         -122.51165980245973,
         37.706441586888126,
         -122.36733814857512,
@@ -223,8 +201,28 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "hoods",
-      "status": "off"
+      "name": "hoods"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -123.05336030029027,
+        36.98370834975372,
+        -121.23958350223668,
+        38.79308843982027
+      ],
+      "id": "tracks",
+      "class": "",
+      "Datasource": {
+        "file": "datasets/Transit_DB_Shapefiles/Transit_Routes.shp",
+        "id": "tracks",
+        "project": "415tiles",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "tracks"
     },
     {
       "geometry": "point",
@@ -246,6 +244,25 @@
       "srs": "",
       "advanced": {},
       "name": "transit"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -123.05336030029027,
+        36.98370834975372,
+        -121.23958350223668,
+        38.79308843982027
+      ],
+      "id": "tracks-2",
+      "class": "",
+      "Datasource": {
+        "file": "datasets/Transit_DB_Shapefiles/Transit_Routes.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "tracks-2",
+      "status": "off"
     }
   ],
   "scale": 1,
