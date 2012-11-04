@@ -12,6 +12,10 @@
 @textColor: #565349;
 @bikeRouteFill: #FFFFFF;
 @bikeRouteStroke: #D8D5CB;
+
+@bartColor: #009BDA;
+@caltrainColor: #E31837;
+  
 @font: "Ubuntu Regular","Arial Regular";
 @fontBold: "Ubuntu Bold","Arial Bold";
 
@@ -22,10 +26,23 @@ Map {
 #transit {
   marker-opacity: 0;
   marker-allow-overlap:true;
+	marker-line-opacity: 0;
+  [zoom <= 14] { 
+    [AGENCYNAME = 'Bay Area Rapid Transit'] {
+      marker-fill:@bartColor;
+		marker-opacity: 1;
+    }  
+    [AGENCYNAME = 'Caltrain'] {
+      marker-fill:@caltrainColor;
+		marker-opacity: 1;
+    }  
+
+  }
   [zoom < 13] { marker-width:4; }
   [zoom = 13] { marker-width:8; }
   [zoom = 14] { marker-width:12; }
-  [zoom > 14] { marker-width:15; }
+  [zoom > 14] { 
+    marker-width:15; 
 	[AGENCYNAME = 'Bay Area Rapid Transit'] {
 		marker-opacity: 1;
     	marker-file: url("markers/bart.svg");
@@ -45,6 +62,7 @@ Map {
 		[zoom > 15] { marker-width: 40; }
     	
 	}
+   }
 }
 
 #hoods {
@@ -75,18 +93,20 @@ Map {
   ::labels {
     text-name:"[streetname]";
     text-face-name:@font;
-    //text-halo-radius:3;
     text-placement: line;
-    text-avoid-edges: true;
+    text-allow-overlap: false;
     text-min-distance: 100;
     text-fill: @textColor;
   }
 
+  [zoom < 13] {
+    line-width: 2;
+  }
+  [zoom = 13] {
+    line-width: 4;
+  }
   [zoom = 14] {
     line-width:10;
-    ::labels {
-      text-min-distance: 100;
-    }
   }
   [zoom > 14] {
     line-width:12;
@@ -106,6 +126,12 @@ Map {
   line-color: @bikeRouteStroke;
   line-join: round;
   line-cap: round;
+  [zoom < 13] {
+    line-width: 4;
+  }
+  [zoom = 13] {
+    line-width: 6;
+  }
   [zoom = 14] {
     line-width:12;
   }
@@ -139,13 +165,19 @@ Map {
 #street-lines {
   line-width: 8;
   line-color:@streetColor;
-  line-opacity: 0.5;
-  [zoom < 14] { line-opacity: 0; }
+  line-opacity: 0.4;
+
   [CLASSCODE = '1']{ line-opacity: 1; line-width: 8; }
-  [CLASSCODE = '2']{ line-opacity: 0.6; line-width: 6; }
-  [CLASSCODE = '3']{ line-opacity: 0.6; line-width: 6; }
-  [CLASSCODE = '4']{ line-opacity: 0.2; line-width: 4; }
-  [CLASSCODE = '5']{ line-opacity: 0.2; line-width: 4; }
+  [CLASSCODE = '2']{ line-opacity: 0.7; line-width: 6; }
+  [CLASSCODE = '3']{ line-opacity: 0.7; line-width: 6; }
+  [CLASSCODE = '4']{ line-opacity: 0.4; line-width: 4; }
+  [CLASSCODE = '5']{ line-opacity: 0.4; line-width: 4; }
+  [zoom <= 14] { 
+    line-width: 3;
+  }
+  [zoom < 14] { 
+    line-opacity: 0;
+  }
 }
 
 #parks {
@@ -161,8 +193,9 @@ Map {
       text-placement: interior;
       text-avoid-edges: true;
       text-fill: @parkTextColor;
-	    text-size: 13;
+	  text-size: 13;
       text-wrap-width: 50;
+      [acres < 4] { text-opacity: 0; }
     }
    }
 }
@@ -191,3 +224,19 @@ Map {
   polygon-fill:@landColor;
   [AREA_NAME = 'Bay and Ocean'] { polygon-opacity: 0; }
 }
+
+#tracks {
+  line-opacity:0;  
+  line-smooth: 1;
+  line-width: 3;
+  [AGENCYNAME = 'Bay Area Rapid Transit'] {
+    line-opacity: 1;
+    line-color: @bartColor;
+  }
+  [AGENCYNAME = 'Caltrain'] {
+    line-opacity: 1;
+    line-color: @caltrainColor;
+  }
+  
+}
+
