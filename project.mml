@@ -183,27 +183,6 @@
       "name": "street-labels"
     },
     {
-      "geometry": "polygon",
-      "extent": [
-        -122.51295285120064,
-        37.706124361551765,
-        -122.35932321942481,
-        37.8335053145485
-      ],
-      "id": "hoods",
-      "class": "",
-      "Datasource": {
-        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/planning_neighborhoods/planning_neighborhoods.shp",
-        "id": "hoods",
-        "project": "bike",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "hoods"
-    },
-    {
       "geometry": "linestring",
       "extent": [
         -123.05336030029027,
@@ -263,6 +242,27 @@
       "advanced": {},
       "name": "tracks-2",
       "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -122.51295285120064,
+        37.706124361551765,
+        -122.35932321942481,
+        37.8335053145485
+      ],
+      "id": "hoods",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/planning_neighborhoods/planning_neighborhoods.shp",
+        "id": "hoods",
+        "project": "bike",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hoods"
     }
   ],
   "scale": 1,

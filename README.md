@@ -8,7 +8,7 @@ The map tiles are hosted at
 [tiles.mapbox.com/sikelianos/map/415tiles](http://tiles.mapbox.com/sikelianos/map/415tiles). 
 and are ready for use in your map project.
 
-![415 Tiles Screenshot](http://f.cl.ly/items/1z0z3Y1o0D3u322W0W0n/415tile-screenshot.png)
+![415 Tiles Screenshot](http://f.cl.ly/items/021Q0B3B0W3Y023k201u/map_textured.jpg)
 
 Data Sources
 ------------
@@ -32,7 +32,7 @@ Tenative Additions
 - [SF Civic Art Collection](https://data.sfgov.org/Arts-Culture-and-Recreation-/SF-Civic-Art-Collection/zfw6-95su)
 - [Water Bodies in San Francisco](https://data.sfgov.org/Geography/Water-Bodies-in-San-Francisco-Zipped-Shapefile-For/7wxv-7sn4)
 - [The Presidio of San Francisco](https://data.sfgov.org/Geography/The-Presidio-of-San-Francisco-Zipped-Shapefile-For/5sny-6aph)
-
+  
 
 Improve it
 ----------

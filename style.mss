@@ -20,7 +20,7 @@
 @fontBold: "Ubuntu Bold","Arial Bold";
 
 Map {
-  background-color: @waterColor;
+  background-image: url("markers/texture.jpg");
 }
 
 #transit {
@@ -42,6 +42,7 @@ Map {
   [zoom = 13] { marker-width:8; }
   [zoom = 14] { marker-width:12; }
   [zoom > 14] { 
+
     marker-width:15; 
 	[AGENCYNAME = 'Bay Area Rapid Transit'] {
 		marker-opacity: 1;
@@ -222,7 +223,11 @@ Map {
   line-color:@shoreColor;
   line-width:1;
   polygon-fill:@landColor;
-  [AREA_NAME = 'Bay and Ocean'] { polygon-opacity: 0; }
+  polygon-opacity: 0.6;
+  [AREA_NAME = 'Bay and Ocean'] {
+    polygon-opacity: 0.7;
+    polygon-fill: @waterColor;
+   }
 }
 
 #tracks {
