@@ -73,7 +73,7 @@
       "id": "parks",
       "class": "",
       "Datasource": {
-        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/RPD_Parks/RPD_Parks.shp",
+        "file": "datasets/RPD_Parks/RPD_Parks.shp",
         "id": "parks",
         "project": "415tiles",
         "srs": ""
@@ -94,7 +94,7 @@
       "id": "street-lines",
       "class": "",
       "Datasource": {
-        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/stclines_streets/stclines_streets.shp",
+        "file": "datasets/stclines_streets/stclines_streets.shp",
         "id": "street-lines",
         "project": "415tiles",
         "srs": ""
@@ -115,7 +115,7 @@
       "id": "parking",
       "class": "",
       "Datasource": {
-        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/SFMTA_Bicycle_Parking_Example__Complete.csv"
+        "file": "datasets/SFMTA_Bicycle_Parking_Example__Complete.csv"
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -151,7 +151,7 @@
       "id": "bike-routes",
       "class": "",
       "Datasource": {
-        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/mta_Bicycle_Route_Network/mta_Bicycle_Route_Network.shp",
+        "file": "datasets/mta_Bicycle_Route_Network/mta_Bicycle_Route_Network.shp",
         "id": "bike-routes",
         "project": "415tiles",
         "srs": ""
@@ -172,7 +172,7 @@
       "id": "street-labels",
       "class": "",
       "Datasource": {
-        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/stclines_streets/stclines_streets.shp",
+        "file": "datasets/stclines_streets/stclines_streets.shp",
         "id": "street-labels",
         "project": "415tiles",
         "srs": ""
@@ -214,7 +214,7 @@
       "id": "transit",
       "class": "",
       "Datasource": {
-        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/Transit_DB_Shapefiles/Transit_Stations.shp",
+        "file": "datasets/Transit_DB_Shapefiles/Transit_Stations.shp",
         "id": "transit",
         "project": "415tiles",
         "srs": ""
@@ -254,7 +254,7 @@
       "id": "hoods",
       "class": "",
       "Datasource": {
-        "file": "/Users/zeke/Documents/mapbox/project/bike/datasets/planning_neighborhoods/planning_neighborhoods.shp",
+        "file": "datasets/planning_neighborhoods/planning_neighborhoods.shp",
         "id": "hoods",
         "project": "bike",
         "srs": ""
